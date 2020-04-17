@@ -1,11 +1,14 @@
 <?php
+/**
+ * Fichier permettant de se connecter à la base de donnée easyPhp
+ * 
+ */
 include "AccesDonnees.php";
 
 $ip=explode(".",$_SERVER['SERVER_NAME']);
 
 switch ($ip[0]) {
     case 127 :
-        //serveurSkylway
         $host = "127.0.0.1";
         $user = "root";
         $password = "";
